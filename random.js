@@ -19,7 +19,7 @@ const ARBT_CONFIG = {
   contractAddress: T3RN_ABI.at(-1).CA_ARBT,
   getAmount: arbtGetAmount,
   transactionData: arbtTransactionData,
-  explorerUrl: 'https://sepolia-explorer.arbitrum.io/tx/'
+  explorerUrl: 'https://sepolia.arbiscan.io/tx/'
 };
 
 const OPSP_CONFIG = {
