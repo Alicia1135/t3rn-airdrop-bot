@@ -53,7 +53,7 @@ const createTransaction = async (wallet, sourceConfig, request) => {
   const gasLimit = await sourceConfig.provider.estimateGas({
     to: sourceConfig.contractAddress,
     data: request,
-    value: parseUnits('0.01', 'ether'),
+    value: parseUnits('0.1', 'ether'),
     gasPrice
   });
 
@@ -63,7 +63,7 @@ const createTransaction = async (wallet, sourceConfig, request) => {
     gasLimit,
     gasPrice,
     from: wallet.address,
-    value: parseUnits('0.01', 'ether') 
+    value: parseUnits('0.1', 'ether') 
   };
 };
 
